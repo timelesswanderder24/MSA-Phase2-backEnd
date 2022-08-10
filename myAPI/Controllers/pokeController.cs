@@ -18,6 +18,7 @@ namespace myAPI.Controllers
             _client = clientFactory.CreateClient("pokemon");
         }
         /// <summary>
+        ///Uses the https://pokeapi.co/ api
         /// Gets the name of a pokemon species according to the input number
         /// </summary>
         /// <returns>A string representing name of a pokemon species corresponding to the input index </returns>
