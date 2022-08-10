@@ -18,9 +18,9 @@ namespace myAPI.Controllers
             _client = clientFactory.CreateClient("pokemon");
         }
         /// <summary>
-        /// Gets the name of a pokemon specie according to the input number
+        /// Gets the name of a pokemon species according to the input number
         /// </summary>
-        /// <returns>A string representing name of a pokemon specie corresponding to the input index </returns>
+        /// <returns>A string representing name of a pokemon species corresponding to the input index </returns>
         [HttpGet]
         [Route("pokemon-species")]
         [ProducesResponseType(200)]
