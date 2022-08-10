@@ -7,11 +7,11 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-builder.Services.AddHttpClient("pokemon", configureClient: client =>
-{
-    client.BaseAddress = new Uri("https://pokeapi.co/api/v2/pokemon-species");
-});
 
+builder.Services.AddHttpClient(builder.Configuration["PokeClientName"], configureClient: client =>
+{
+    client.BaseAddress = new Uri(builder.Configuration["PokeAddress"]);
+});
 var app = builder.Build();
 
 app.UseSwaggerUI(options =>
