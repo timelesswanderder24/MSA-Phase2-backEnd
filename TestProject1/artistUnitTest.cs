@@ -5,7 +5,7 @@ using Microsoft.Extensions.DependencyInjection;
 
 namespace TestProject1
 {
-    public class TeartistUnitTeststs
+    public class artistUnitTest
     {
         private readonly string[] args;
 
