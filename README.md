@@ -3,8 +3,8 @@ The difference between the appsettings.json and appsettings.development.json is 
 development configuration while the other one is used for in memory. 
 
 middleware via DI - Middleware like Swagger takes in the objects created by the developer and adds different
-features(eg -adds UI). Niddleware simplifies our code by creating libraries for the developer so that
-they can be used to save time...
+features(eg -adds UI). Middleware simplifies our code by creating libraries for the developer so that
+they save time...
 
 NUnit test is done to check the accuracy of our code agianst range of different attributes
 
